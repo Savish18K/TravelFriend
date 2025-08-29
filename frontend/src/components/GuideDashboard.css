@@ -1,0 +1,204 @@
+/* General Styling */
+.guide-dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 1550px;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), 
+    url('../images/mount3.jpg');
+    background-size: cover; /* Makes the image cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-color: #dcdcdc;
+}
+
+/* Navbar */
+.guide-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.guide-dashboard .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.guide-dashboard .logo-blue {
+    color: #1f26fb;
+}
+
+.guide-dashboard .header-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.guide-dashboard .header-nav a:hover {
+    color: #ccc;
+}
+
+.guide-dashboard .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.notification-bell {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Admin Profile Popup */
+.profile-popup {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.profile-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-popup ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.profile-popup ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-popup ul li button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    color: #333;
+}
+
+
+
+.guide-dashboard .overview {
+    padding: 30px;
+    margin-top: 450px;
+}
+
+.guide-dashboard .overview h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.guide-dashboard .stats, .stats1 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px; 
+}
+
+.guide-dashboard .stats {
+    justify-self: center;
+}
+
+.guide-dashboard .card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.guide-dashboard .card h4 {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.guide-dashboard .card p {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.guide-dashboard .charts {
+    display: flex;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.guide-dashboard .chart {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.guide-dashboard .chart h4 {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.guide-dashboard .chart img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.guide-dashboard .guide-footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #7f8c8d;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats, .stats1, .charts {
+        flex-direction: column;
+    }
+
+    .guide-navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
